@@ -1,0 +1,23 @@
+### Authentication details
+export TF_VAR_tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaatembdddnb65gdmdrqgscz6zuuojatpxhy42aubviys2rlrqrfria"
+
+export TF_VAR_user_ocid="ocid1.user.oc1..aaaaaaaaofz5n67yffxiitkpptzwbxt7vf2xabrgojqlz7hp4gt2scerpxra"
+
+export TF_VAR_fingerprint="3b:99:1d:9c:18:89:aa:6b:7f:2f:86:aa:0b:ec:5b:8c"
+
+export TF_VAR_private_key_path="/Users/abannang/.oci/oci_api_key.pem"
+
+export TF_VAR_vcn_ocid="ocid1.vcn.oc1.iad.aaaaaaaaonmux4hirmjo32eq7qumsyd22slf5fnemx44kjztxkairpm3cbaq"
+export TF_VAR_igw_ocid="ocid1.internetgateway.oc1.iad.aaaaaaaawtmx245uipi5m37w6t7p6mjxjkn45e63nuhmpisnoyy5tfeeo2da"
+export TF_VAR_rt_ocid="ocid1.routetable.oc1.iad.aaaaaaaaywuxfsbahtaxa7vhmd4qvzajlw3egtichrvsxr6qx224ubmvve3a"
+export TF_VAR_security_list_ocid="ocid1.securitylist.oc1.iad.aaaaaaaazpe5efv5d5a6un45b6iz4j3e3fblqx6s3tlm6y76el4s2gbzejfq"
+export TF_VAR_dhcp_options_ocid="ocid1.dhcpoptions.oc1.iad.aaaaaaaadimv75nn45pe3d7b4d5xn3pavp5kp3xricz6dgnbntcssuvwwmda"
+### Region
+export TF_VAR_region="us-ashburn-1"
+
+### Compartment
+export TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaaxjelcqzgxhurz34lkqdbdqpb6g7b4sahkjrax3qhn2hsv3i5yidq"
+
+### Public/private keys used on the instance
+export TF_VAR_ssh_public_key=$(cat /Users/abannang/Desktop/keys.pub)
+export TF_VAR_ssh_private_key=$(cat /Users/abannang/Desktop/keys)

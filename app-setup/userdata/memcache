@@ -1,0 +1,15 @@
+#!/bin/bash
+# Just an example of userdata
+sudo apt-get update -y
+
+#Allow port 11211 which Memcached server listens on, through instance firewall
+sudo apt-get install firewalld -y
+sudo firewall-cmd --permanent --add-port=11211/tcp
+sudo firewall-cmd --permanent --add-port=11211/udp
+sudo firewall-cmd —reload
+
+#Install memcached server
+sudo apt-get -y install memcached
+
+#Start memcached server
+sudo service memcached start

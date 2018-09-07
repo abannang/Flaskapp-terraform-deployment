@@ -1,0 +1,11 @@
+#!/bin/bash
+sudo apt-get -y update
+
+#Allow TCP port 3306 which Mysql server listens on, through instance firewall
+sudo apt-get install firewalld -y
+sudo firewall-cmd --permanent --add-port=3306/tcp
+sudo firewall-cmd —reload
+
+
+#Install MySQL server
+sudo apt-get install mysql-server -y

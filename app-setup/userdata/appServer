@@ -1,0 +1,23 @@
+#!/bin/bash
+# Just an example of userdata
+sudo apt-get update -y
+
+# Install Apache web server
+sudo apt-get -y install apache2
+
+#Allow Apache (HTTP and HTTPS) through instance firewall
+sudo apt-get install firewalld -y
+
+sudo firewall-cmd --permanent --add-port=80/tcp
+sudo firewall-cmd --permanent --add-port=443/tcp
+sudo firewall-cmd --reload
+
+#Install Memcache and MySQL python client libraries
+sudo apt-get -y install python-pip
+sudo -H pip install --upgrade pip
+sudo pip install python-memcached
+sudo pip install flask
+sudo apt-get install python-mysqldb -y
+
+nohup /home/ubuntu/main.py &
+
